@@ -1,2 +1,2 @@
 # aplicaciones-web-practicas
-Aqui estará todo loque suba
+Aqui estará todo lo que suba
