@@ -8,4 +8,4 @@
 
 5. Arreglar el error
 
-6. ![Error del Virtual Vox](/Captura de 2026-09-15 16-31-50.png)
+6. ![Error del Virtual Vox](Captura de 2026-09-15 16-31-50.png)
