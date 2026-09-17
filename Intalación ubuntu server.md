@@ -1,6 +1,6 @@
-1. Instalar Virtual Vox
+1. Instalar VirtualBox
 
-2. Istalar iso ubuntu desktop
+2. Istalar iso ubuntu Srever
 
 3. Abrir Virtual Vox
 
