@@ -8,4 +8,6 @@
 
 5. Arreglar el error
 
-6. ![Error del Virtual Vox](Error%20VirtualBox.png)
+6. ![Error del VirtualBox](Error%20VirtualBox.png)
+
+7. Al final solo ha echo falta actualizar el BirtualBox
