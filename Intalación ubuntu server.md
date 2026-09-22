@@ -30,3 +30,5 @@ openssh-server)todo junto
 15. no istales nada cada sevicio lo intalaremos nosotros mismos para saber que hace cada uno en detalle
 
 16. luego espera a que termine y dale a reboot now y listo la instalación está terminada
+
+17. ahora solo queda iniciar sesión con nuestro usuario y contraseña
