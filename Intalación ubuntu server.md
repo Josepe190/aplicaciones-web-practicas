@@ -10,7 +10,7 @@
 
 6. ![Error del VirtualBox](Error%20VirtualBox.png)
 
-7. Al final hemos tenido que desinstalar el BirtualBox y luego vlver a instalar el BirtualBox a su ultima versión para arreglar el error
+7. Al final hemos tenido que desinstalar el BirtualBox y luego volver a instalar el BirtualBox a su ultima versión para arreglar el error
 
 8. Después de la instalación de la maquina elegimos el idioma del teclado y del sistema
 
