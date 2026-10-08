@@ -41,7 +41,7 @@ openssh-server)todo junto
 
 ![Revisa los espacios tener muy encuenta](Sense%20títol.png)
 
-Revisa los espacios tener muy encuenta
+Revisar los espacios tener muy encuenta
 
 21.  1. Actualiza el índice de paquetes locales
 sudo apt update
