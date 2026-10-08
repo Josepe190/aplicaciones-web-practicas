@@ -39,6 +39,9 @@ openssh-server)todo junto
 
 20. es un servidor web de código abierto, gratuito y multiplataforma. Su función principal es procesar las peticiones de los usuarios y entregarles las páginas o archivos de un sitio web a través de internet.
 
+![Revisa los espacios tener muy encuenta]()
+
+
 21.  1. Actualiza el índice de paquetes locales
 sudo apt update
 
