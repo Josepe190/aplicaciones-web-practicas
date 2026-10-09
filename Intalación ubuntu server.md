@@ -93,3 +93,70 @@ A continuación un ejemplo de cómo realizarlo según la opción 2:
 
 
 ![Revisa los espacios tener muy encuenta](para%20github.png)
+
+
+
+32.Paso 5 · Activar el sitio y reiniciar Apache
+sudo a2ensite smr.conf
+sudo a2dissite 000-default.conf
+sudo apachectl configtest
+sudo systemctl restart apache2
+
+
+
+33.Paso 6 · Comprobar que funciona
+Primero necesitáis la IP de la VM. Ejecutad ip a y buscad una dirección parecida a 192.168.56.10.
+A) Desde la máquina anfitrión (sin tocar el fichero hosts)
+Abrid el navegador y entrad con la IP en lugar del nombre:
+Escribid en el navegador Debe aparecer
+http://IP_DE_LA_VM Bienvenidos a SMR
+http://IP_DE_LA_VM:9999 Ventana de usuario y contraseña; al acertar, Intranet de SMR
+B) Por nombre, desde una segunda VM
+Como en el anfitrión no tenéis permisos para editar el fichero hosts, hacedlo en otra VM donde sí seáis
+administradores (debe estar en la misma red que la primera):
+sudo nano /etc/hosts
+Añadid una línea con la IP de la primera VM y el nombre:
+192.168.56.10 www.smr.com
+Ahora, desde el navegador de esa VM, probad http://www.smr.com y http://www.smr.com:9999.
+
+
+
+34.
+Paso 1: Crear el archivo de contraseñas (.htpasswd)
+
+El servidor necesita almacenar las credenciales en un archivo cifrado. Por seguridad, este archivo se debe ubicar fuera de la carpeta pública de la web (como public_html) para que nadie pueda descargarlo.
+Usa el comando htpasswd en tu terminal para crear el archivo y añadir al primer usuario:
+bash
+# El parámetro -c crea el archivo por primera vez
+htpasswd -c /home/usuario/seguridad/.htpasswd mi_usuario
+Usa el código con precaución.
+El sistema te pedirá introducir y confirmar la contraseña elegida.
+Para añadir más usuarios en el futuro al mismo archivo, ejecuta el comando sin el parámetro -c:
+bash
+htpasswd /home/usuario/seguridad/.htpasswd otro_usuario
+Usa el código con precaución.
+
+📂 Paso 2: Configurar las directivas de acceso
+
+Tienes dos opciones para aplicar la restricción: mediante un archivo .htaccess o directamente en los archivos de configuración de Apache.
+
+Opción A: Usar un archivo .htaccess (Recomendado para hostings compartidos)
+
+Crea o edita un archivo llamado .htaccess dentro del directorio específico que deseas proteger e incluye el siguiente código:
+apache
+AuthType Basic
+AuthName "Contenido Restringido"
+AuthUserFile /home/usuario/seguridad/.htpasswd
+Require valid-user
+Usa el código con precaución.
+
+Opción B: Usar el archivo de configuración global de Apache (httpd.conf o apache2.conf)
+
+Si tienes acceso raíz al servidor, es más eficiente configurar la protección directamente dentro del bloque <Directory> correspondiente:
+apache
+<Directory "/var/www/html/tu_directorio_protegido">
+    AuthType Basic
+    AuthName "Área Privada"
+    AuthUserFile /home/usuario/seguridad/.htpasswd
+    Require valid-user
+</Directory>
