@@ -59,4 +59,34 @@ sudo apt install apache2 -y
 
 26.sites-enabled/	Es la carpeta que contiene los sitios web actualmente activos. No guarda archivos reales, sino enlaces simbólicos (accesos directos) que apuntan a los archivos correspondientes dentro de sites-available/.
 
-27
+27.Un Virtual Host permite alojar múltiples páginas web independientes en un mismo servidor. El servidor web decide qué sitio mostrar según la IP o el puerto de la petición.
+
+28.Paso 1 · Crear las carpetas y las páginas
+sudo mkdir -p /var/www/smr/web /var/www/smr/intranet
+echo "<h1>Bienvenidos a SMR</h1>" | sudo tee /var/www/smr/web/index.html
+echo "<h1>Intranet de SMR</h1>" | sudo tee /var/www/smr/intranet/intranet.html
+
+29.Paso 2 · Crear el usuario de la intranet
+sudo apt install apache2-utils -y
+sudo htpasswd -c /etc/apache2/.htpasswd alumno
+
+30.Paso 3 · Decirle a Apache que escuche en el puerto 9999
+sudo nano /etc/apache2/ports.conf
+Debajo de la línea Listen 80 añadid una línea nueva:
+Listen 80
+Listen 9999
+
+31.Paso 4 · Crear el virtualhost
+sudo nano /etc/apache2/sites-available/smr.conf
+Llegados a este punto tenemos dos opciones:
+1. Crear dos ficheros de configuración como hemos hecho habitualmente en clase (eso significará
+tener que habilitar ambos sitios) o
+2. En un único fichero de configuración crear dos VirtualHost.
+Puedes realizarlo de la manera que consideres (o incluso de las dos, y documentarlo, lo que aumentará tu
+destreza y te ayudará a estudiar).
+A continuación un ejemplo de cómo realizarlo según la opción 2:
+
+• ServerName: el nombre de la web (igual en los dos bloques).
+• DocumentRoot: la carpeta donde están las páginas de cada web.
+• DirectoryIndex: la página principal de la intranet, ya que no es index.html.
+• El bloque Directory es lo que pide usuario y contraseña (ya lo conocéis de la práctica anterior).
