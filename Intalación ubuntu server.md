@@ -90,4 +90,4 @@ A continuación un ejemplo de cómo realizarlo según la opción 2:
 • DocumentRoot: la carpeta donde están las páginas de cada web.
 • DirectoryIndex: la página principal de la intranet, ya que no es index.html.
 • El bloque Directory es lo que pide usuario y contraseña (ya lo conocéis de la práctica anterior).
-![Revisa los espacios tener muy encuenta](para&20github.png)
+![Revisa los espacios tener muy encuenta](paragithub.png)
