@@ -1,4 +1,4 @@
-# Instalación de Ubuntu Server
+# Instalar un servidor Ubuntu sin interfaz gráfica.
   
 3.  Instalar VirtualBox
 
@@ -12,7 +12,7 @@
 
 8. ![Error del VirtualBox](Error%20VirtualBox.png)
 
-9. Al final hemos tenido que desinstalar el BirtualBox y luego volver a instalar el BirtualBox a su ultima versión para arreglar el error
+9. Al final hemos tenido que desinstalar el VirtualBox y luego volver a instalar el VirtualBox a su ultima versión para arreglar el error
 
 10. Después de la instalación de la maquina elegimos el idioma del teclado y del sistema
 
@@ -33,22 +33,24 @@ openssh-server)todo junto
 
 18. luego espera a que termine y dale a reboot now y listo la instalación está terminada
 
-19. ahora solo queda iniciar sesión con nuestro usuario y contraseña.
+    # Gestionando un servidor por SSH.
 
-20. es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
+20. ahora solo queda iniciar sesión con nuestro usuario y contraseña.
 
-21. luego para configurar el SSH hacemos cd /etc/netplan luego haz ls y luego sudo nano el numero del archivo y pulsa el icono de las dos flechas (tabulador)
+21. es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
 
-22. es un servidor web de código abierto, gratuito y multiplataforma. Su función principal es procesar las peticiones de los usuarios y entregarles las páginas o archivos de un sitio web a través de internet.
+22. luego para configurar el SSH hacemos cd /etc/netplan luego haz ls y luego sudo nano el numero del archivo y pulsa el icono de las dos flechas (tabulador)
+
+23. es un servidor web de código abierto, gratuito y multiplataforma. Su función principal es procesar las peticiones de los usuarios y entregarles las páginas o archivos de un sitio web a través de internet.
 
 ![Revisa los espacios tener muy encuenta](Sense%20títol.png)
 
 Revisar los espacios tener muy encuenta
 
-21.  1. Actualiza el índice de paquetes locales
+21.   Actualiza el índice de paquetes locales
 sudo apt update
 
-2. Instala el servidor web Apache2
+ Instala el servidor web Apache2
 sudo apt install apache2 -y
 
 22.sudo systemctl status apache2
@@ -63,16 +65,16 @@ sudo apt install apache2 -y
 
 27.Un Virtual Host permite alojar múltiples páginas web independientes en un mismo servidor. El servidor web decide qué sitio mostrar según la IP o el puerto de la petición.
 
-28.Paso 1 · Crear las carpetas y las páginas
+28.Paso Crear las carpetas y las páginas
 sudo mkdir -p /var/www/smr/web /var/www/smr/intranet
 echo "<h1>Bienvenidos a SMR</h1>" | sudo tee /var/www/smr/web/index.html
 echo "<h1>Intranet de SMR</h1>" | sudo tee /var/www/smr/intranet/intranet.html
 
-29.Paso 2 · Crear el usuario de la intranet
+29.Paso  Crear el usuario de la intranet
 sudo apt install apache2-utils -y
 sudo htpasswd -c /etc/apache2/.htpasswd alumno
 
-30.Paso 3 · Decirle a Apache que escuche en el puerto 9999
+30.Paso  Decirle a Apache que escuche en el puerto 9999
 sudo nano /etc/apache2/ports.conf
 Debajo de la línea Listen 80 añadid una línea nueva:
 Listen 80
