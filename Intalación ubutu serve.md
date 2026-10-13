@@ -4,7 +4,7 @@
 
  Istalar iso ubuntu Srever
 
- Abrir Virtual Vox
+ Abrir VirtualBox
 
  Configurar la maquina virtual
 
