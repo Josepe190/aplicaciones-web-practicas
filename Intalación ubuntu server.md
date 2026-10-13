@@ -33,11 +33,11 @@ openssh-server)todo junto
 
 18. luego espera a que termine y dale a reboot now y listo la instalación está terminada
 
-    # Gestionando un servidor por SSH.
-
 20. ahora solo queda iniciar sesión con nuestro usuario y contraseña.
 
-21. es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
+ # Gestionando un servidor por SSH.
+
+21. SSH es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
 
 22. luego para configurar el SSH hacemos cd /etc/netplan luego haz ls y luego sudo nano el numero del archivo y pulsa el icono de las dos flechas (tabulador)
 
@@ -46,6 +46,8 @@ openssh-server)todo junto
 ![Revisa los espacios tener muy encuenta](Sense%20títol.png)
 
 Revisar los espacios tener muy encuenta
+
+# Servidor web Apache2.
 
 21.   Actualiza el índice de paquetes locales
 sudo apt update
