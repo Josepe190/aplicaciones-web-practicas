@@ -5,3 +5,5 @@
 [CONFIGURACIÓN SSH](https://github.com/Josepe190/aplicaciones-web-practicas/blob/main/Gestionando%20un%20servidor%20por%20SSH.md)
 
 [CONFIGURACIÓN APACHE2](https://github.com/Josepe190/aplicaciones-web-practicas/blob/main/Servidor%20web%20Apache2.md)
+
+[](https://github.com/Josepe190/aplicaciones-web-practicas/edit/main/practica-mariadb.md)
