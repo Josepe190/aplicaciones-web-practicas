@@ -1,43 +1,45 @@
-1. Instalar VirtualBox
+# Instalación de Ubuntu Server
+  
+3.  Instalar VirtualBox
 
-2. Istalar iso ubuntu Srever
+4. Istalar iso ubuntu Srever
 
-3. Abrir Virtual Vox
+5. Abrir Virtual Vox
 
-4. Configurar la maquina virtual
+6. Configurar la maquina virtual
 
-5. Arreglar el error
+7. Arreglar el error
 
-6. ![Error del VirtualBox](Error%20VirtualBox.png)
+8. ![Error del VirtualBox](Error%20VirtualBox.png)
 
-7. Al final hemos tenido que desinstalar el BirtualBox y luego volver a instalar el BirtualBox a su ultima versión para arreglar el error
+9. Al final hemos tenido que desinstalar el BirtualBox y luego volver a instalar el BirtualBox a su ultima versión para arreglar el error
 
-8. Después de la instalación de la maquina elegimos el idioma del teclado y del sistema
+10. Después de la instalación de la maquina elegimos el idioma del teclado y del sistema
 
-9. Elegimos el tipo de instalación de ubuntu server el minimized no
+11. Elegimos el tipo de instalación de ubuntu server el minimized no
 
-10. La proxy se deja en blanco
+12. La proxy se deja en blanco
 
-11. para el almacenamiento elegimos nustro disco duro completo
+13. para el almacenamiento elegimos nustro disco duro completo
 
-12. Ahora pon el nombre del servidor y luego tu usuario y contraseña (Recomendado apuntar en un papel)
+14. Ahora pon el nombre del servidor y luego tu usuario y contraseña (Recomendado apuntar en un papel)
 
-13. y para terminar la instalación marca la casilla Install OpenSSH server
+15. y para terminar la instalación marca la casilla Install OpenSSH server
 
-14. si por alguna razón no la as marcado o no te sale por alguna extraña razon escribe en la terminal(sudo apt update && sudo apt install
+16. si por alguna razón no la as marcado o no te sale por alguna extraña razon escribe en la terminal(sudo apt update && sudo apt install
 openssh-server)todo junto
 
-15. no istales nada cada sevicio lo intalaremos nosotros mismos para saber que hace cada uno en detalle
+17. no istales nada cada sevicio lo intalaremos nosotros mismos para saber que hace cada uno en detalle
 
-16. luego espera a que termine y dale a reboot now y listo la instalación está terminada
+18. luego espera a que termine y dale a reboot now y listo la instalación está terminada
 
-17. ahora solo queda iniciar sesión con nuestro usuario y contraseña.
+19. ahora solo queda iniciar sesión con nuestro usuario y contraseña.
 
-18. es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
+20. es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
 
-19. luego para configurar el SSH hacemos cd /etc/netplan luego haz ls y luego sudo nano el numero del archivo y pulsa el icono de las dos flechas (tabulador)
+21. luego para configurar el SSH hacemos cd /etc/netplan luego haz ls y luego sudo nano el numero del archivo y pulsa el icono de las dos flechas (tabulador)
 
-20. es un servidor web de código abierto, gratuito y multiplataforma. Su función principal es procesar las peticiones de los usuarios y entregarles las páginas o archivos de un sitio web a través de internet.
+22. es un servidor web de código abierto, gratuito y multiplataforma. Su función principal es procesar las peticiones de los usuarios y entregarles las páginas o archivos de un sitio web a través de internet.
 
 ![Revisa los espacios tener muy encuenta](Sense%20títol.png)
 
@@ -127,7 +129,7 @@ Paso 1: Crear el archivo de contraseñas (.htpasswd)
 El servidor necesita almacenar las credenciales en un archivo cifrado. Por seguridad, este archivo se debe ubicar fuera de la carpeta pública de la web (como public_html) para que nadie pueda descargarlo.
 Usa el comando htpasswd en tu terminal para crear el archivo y añadir al primer usuario:
 bash
-# El parámetro -c crea el archivo por primera vez
+ El parámetro -c crea el archivo por primera vez
 htpasswd -c /home/usuario/seguridad/.htpasswd mi_usuario
 Usa el código con precaución.
 El sistema te pedirá introducir y confirmar la contraseña elegida.
@@ -136,21 +138,7 @@ bash
 htpasswd /home/usuario/seguridad/.htpasswd otro_usuario
 Usa el código con precaución.
 
-📂 Paso 2: Configurar las directivas de acceso
-
-Tienes dos opciones para aplicar la restricción: mediante un archivo .htaccess o directamente en los archivos de configuración de Apache.
-
-Opción A: Usar un archivo .htaccess (Recomendado para hostings compartidos)
-
-Crea o edita un archivo llamado .htaccess dentro del directorio específico que deseas proteger e incluye el siguiente código:
-apache
-AuthType Basic
-AuthName "Contenido Restringido"
-AuthUserFile /home/usuario/seguridad/.htpasswd
-Require valid-user
-Usa el código con precaución.
-
-Opción B: Usar el archivo de configuración global de Apache (httpd.conf o apache2.conf)
+Paso 2: Configurar las directivas de acceso
 
 Si tienes acceso raíz al servidor, es más eficiente configurar la protección directamente dentro del bloque <Directory> correspondiente:
 apache
