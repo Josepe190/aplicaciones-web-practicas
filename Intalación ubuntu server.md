@@ -67,22 +67,22 @@ sudo apt install apache2 -y
 
 27.Un Virtual Host permite alojar múltiples páginas web independientes en un mismo servidor. El servidor web decide qué sitio mostrar según la IP o el puerto de la petición.
 
-28.Paso Crear las carpetas y las páginas
+28. Crear las carpetas y las páginas
 sudo mkdir -p /var/www/smr/web /var/www/smr/intranet
 echo "<h1>Bienvenidos a SMR</h1>" | sudo tee /var/www/smr/web/index.html
 echo "<h1>Intranet de SMR</h1>" | sudo tee /var/www/smr/intranet/intranet.html
 
-29.Paso  Crear el usuario de la intranet
+29. Crear el usuario de la intranet
 sudo apt install apache2-utils -y
 sudo htpasswd -c /etc/apache2/.htpasswd alumno
 
-30.Paso  Decirle a Apache que escuche en el puerto 9999
+30. Decirle a Apache que escuche en el puerto 9999
 sudo nano /etc/apache2/ports.conf
 Debajo de la línea Listen 80 añadid una línea nueva:
 Listen 80
 Listen 9999
 
-31.Paso 4 · Crear el virtualhost
+31.Crear el virtualhost
 sudo nano /etc/apache2/sites-available/smr.conf
 Llegados a este punto tenemos dos opciones:
 1. Crear dos ficheros de configuración como hemos hecho habitualmente en clase (eso significará
@@ -102,7 +102,7 @@ A continuación un ejemplo de cómo realizarlo según la opción 2:
 
 
 
-32.Paso 5 · Activar el sitio y reiniciar Apache
+32. Activar el sitio y reiniciar Apache
 sudo a2ensite smr.conf
 sudo a2dissite 000-default.conf
 sudo apachectl configtest
@@ -110,7 +110,7 @@ sudo systemctl restart apache2
 
 
 
-33.Paso 6 · Comprobar que funciona
+33. Comprobar que funciona
 Primero necesitáis la IP de la VM. Ejecutad ip a y buscad una dirección parecida a 192.168.56.10.
 A) Desde la máquina anfitrión (sin tocar el fichero hosts)
 Abrid el navegador y entrad con la IP en lugar del nombre:
@@ -128,7 +128,7 @@ Ahora, desde el navegador de esa VM, probad http://www.smr.com y http://www.smr.
 
 
 34.
-Paso 1: Crear el archivo de contraseñas (.htpasswd)
+ Crear el archivo de contraseñas (.htpasswd)
 
 El servidor necesita almacenar las credenciales en un archivo cifrado. Por seguridad, este archivo se debe ubicar fuera de la carpeta pública de la web (como public_html) para que nadie pueda descargarlo.
 Usa el comando htpasswd en tu terminal para crear el archivo y añadir al primer usuario:
@@ -142,7 +142,7 @@ bash
 htpasswd /home/usuario/seguridad/.htpasswd otro_usuario
 Usa el código con precaución.
 
-Paso 2: Configurar las directivas de acceso
+ Configurar las directivas de acceso
 
 Si tienes acceso raíz al servidor, es más eficiente configurar la protección directamente dentro del bloque <Directory> correspondiente:
 apache
