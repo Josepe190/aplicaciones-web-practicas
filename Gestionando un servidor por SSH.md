@@ -1,5 +1,7 @@
  # Gestionando un servidor por SSH.
 
+sudo bash preparar_examen.sh
+ 
  SSH es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
 
  luego para configurar el SSH hacemos cd /etc/netplan luego haz ls y luego sudo nano el numero del archivo y pulsa el icono de las dos flechas (tabulador)
