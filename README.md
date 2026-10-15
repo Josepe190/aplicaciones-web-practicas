@@ -6,4 +6,4 @@
 
 [CONFIGURACIÓN APACHE2](https://github.com/Josepe190/aplicaciones-web-practicas/blob/main/Servidor%20web%20Apache2.md)
 
-[practica-mariadb]()
+[PRACTICA-MARIADB](https://github.com/Josepe190/aplicaciones-web-practicas/blob/main/Practica%20maria%20por%20si%20acaso.md)
