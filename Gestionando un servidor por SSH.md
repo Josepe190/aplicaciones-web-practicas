@@ -1,6 +1,6 @@
  # Gestionando un servidor por SSH.
 
-sudo bash preparar_examen.sh
+ssh josep@192.168.56.10
  
  SSH es un protocolo de red que permite acceder y administrar un ordenador o servidor de forma remota y segura a través de una red.
 
