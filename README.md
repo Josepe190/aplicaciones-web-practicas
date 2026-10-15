@@ -6,4 +6,4 @@
 
 [CONFIGURACIÓN APACHE2](https://github.com/Josepe190/aplicaciones-web-practicas/blob/main/Servidor%20web%20Apache2.md)
 
-[practica-mariadb](https://github.com/Josepe190/aplicaciones-web-practicas/edit/main/practica-mariadb.md)
+[practica-mariadb]()
