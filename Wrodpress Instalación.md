@@ -1,3 +1,20 @@
 # Instalación de Wordpress
 
 Esto solo lo puedes hacer después de instalar mariadb
+
+
+1.Az sudo mariadb después de poner eso te tiene que salir algo parecido:
+
+
+2.Ahora escribe:
+CREATE DATABASE wordpress CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'wp_user'@'localhost' IDENTIFIED BY 'josepe190';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wp_user'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+
+josepe190 esto es la contraseña lo digo para que la puedas cambiar
+
+
+3.Luego escribe mariadb -u wp_user -p wordpress y luego tu contraseña de antes y despues escribe SHOW TABLES; y cuando acabe escribe EXIT;
