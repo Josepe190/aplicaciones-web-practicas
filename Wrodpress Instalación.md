@@ -18,3 +18,13 @@ josepe190 esto es la contraseña lo digo para que la puedas cambiar
 
 
 3.Luego escribe mariadb -u wp_user -p wordpress y luego tu contraseña de antes y despues escribe SHOW TABLES; y cuando acabe escribe EXIT;
+
+
+4.Luego escribe:cd /tmp para acceder a este directorio y luego escribe:wget https://wordpress.org
+
+
+5.Ejecuta el editor para modificar los puertos:
+
+sudo nano /etc/apache2/ports.conf
+
+Dentro del archivo, baja con las flechas del teclado y añade la línea Listen 8080 justo debajo de donde pone Listen 80.
