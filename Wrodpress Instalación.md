@@ -31,7 +31,8 @@ josepe190 esto es la contraseña lo digo para que la puedas cambiar
 
 3.Luego escribe mariadb -u wp_user -p wordpress y luego tu contraseña de antes y despues escribe SHOW TABLES; y cuando acabe escribe EXIT;
 
+![Captura 2Wordpress](Captura%202Wordpress.png)
+
 
 4.Luego escribe:cd /tmp para acceder a este directorio y luego escribe:wget https://wordpress.org
 
-![Captura 2Wordpress](Captura%202Wordpress.png)
