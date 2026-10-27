@@ -9,7 +9,7 @@ sudo nano /etc/apache2/ports.conf
 
 Dentro del archivo, baja con las flechas del teclado y añade la línea Listen 8080 justo debajo de donde pone Listen 80.
 
-![Captura de 2026-10-27 15-13-47.png]
+![]
 
 luego guarda y sal al directorio principal
 
