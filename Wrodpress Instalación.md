@@ -34,8 +34,4 @@ josepe190 esto es la contraseña lo digo para que la puedas cambiar
 
 4.Luego escribe:cd /tmp para acceder a este directorio y luego escribe:wget https://wordpress.org
 
-
-5.
-
-
-captura 2
+![Captura 2Wordpress](Captura%202Wordpress.png)
