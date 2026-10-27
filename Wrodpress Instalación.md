@@ -34,5 +34,13 @@ josepe190 esto es la contraseña lo digo para que la puedas cambiar
 ![Captura 2Wordpress](Captura%202Wordpress.png)
 
 
-4.Luego escribe:cd /tmp para acceder a este directorio y luego escribe:wget https://wordpress.org
+4.Luego escribe:cd /tmp para acceder a este directorio y luego escribe:wget https://wordpress.org/latest.tar.gz
+
+luego esto:tar -xzf latest.tar.gz
+
+cuando acabe escibe esto:ls wordpress
+
+luego:sudo mkdir -p /var/www/wordpress cuando acabe esto:sudo cp -a /tmp/wordpress/. /var/www/wordpress/ y cuando acabe:ls /var/www/wordpress y tiene que salir algo asi
+
+(captura3)
 
