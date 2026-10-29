@@ -42,5 +42,5 @@ cuando acabe escibe esto:ls wordpress
 
 luego:sudo mkdir -p /var/www/wordpress cuando acabe esto:sudo cp -a /tmp/wordpress/. /var/www/wordpress/ y cuando acabe:ls /var/www/wordpress y tiene que salir algo asi
 
-(captura3)
+![Captura 3](Captura%203.png)
 
