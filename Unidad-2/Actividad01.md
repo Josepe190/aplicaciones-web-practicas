@@ -21,5 +21,5 @@
 |3.`<sub>` ||C. Texto enfatizado (se ve como cursiva)||
 |4.`<sup>` ||D. Texto más pequeño que el normal||
 |5.`<small>`||E. Texto en subíndice (como en H₂O)||
-|6. `<em>`|F. Texto en superíndice (como en m²)||
-|7.`<ins>`|G. Texto insertado (se ve subrayado)||
+|6. `<em>`||F. Texto en superíndice (como en m²)||
+|7.`<ins>`||G. Texto insertado (se ve subrayado)||
