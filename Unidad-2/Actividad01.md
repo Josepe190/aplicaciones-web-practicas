@@ -4,3 +4,4 @@
 |2|"La etiqueta <br> no necesita etiqueta de cierre."|
 |3|"El valor de un atributo siempre se escribe entre comillas."|
 |4|"Los atributos de una etiqueta se escriben en la etiqueta de cierre."|
+|5|
