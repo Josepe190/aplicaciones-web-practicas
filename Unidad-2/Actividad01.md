@@ -12,4 +12,4 @@
 |10|"`<span>` crea un bloque de texto que siempre empieza en una línea nueva."|F|
 
 
-|Etiqueta||Efecto|||
+|Etiqueta||Efecto||
