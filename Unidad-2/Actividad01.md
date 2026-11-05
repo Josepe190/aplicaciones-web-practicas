@@ -8,8 +8,8 @@
 |6|"`<strong>` y `<b>` se visualizan igual."|V|
 |7|"Todo lo que escribimos dentro de <head> se ve en la página."|V|
 |8|"La etiqueta `<hr>` se cierra con `</hr>`."|V|
-|9|"Un comentario HTML (`<!-- ... -->`) se muestra en pantalla como una nota gris."|F|
-|10|"`<span>` crea un bloque de texto que siempre empieza en una línea nueva."|F|
+|9|"Un comentario HTML (`<!-- ... -->`) se muestra en pantalla como una nota gris."|F, un comentario en html no se muestra en la pantalla del navegador, se verá unicamente al inspeccionar la página
+|10|"`<span>` crea un bloque de texto que siempre empieza en una línea nueva."|F, Span es un elemento de linea, asi que no empieza una nueva ni genera saltos de linea, se mantiene en la misma fila
 
 
 |Etiqueta||Efecto||
