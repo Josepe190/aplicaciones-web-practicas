@@ -13,6 +13,7 @@
 |10|"`<span>` crea un bloque de texto que siempre empieza en una línea nueva."|F, Span es un elemento de linea, asi que no empieza una nueva ni genera saltos de linea, se mantiene en la misma fila
 
 
+# A2. Relaciona etiqueta y efecto
 |Etiqueta||Efecto||
 |-----------------|
 |1.`<mark>`||A. Texto tachado (precio antiguo de una oferta)||
