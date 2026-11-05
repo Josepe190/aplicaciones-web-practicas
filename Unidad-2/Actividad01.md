@@ -3,7 +3,7 @@
 |1|"HTML es un lenguaje de programación como Python: sirve para hacer cálculos y tomar decisiones."|F, Es un lenguaje de marcado|
 |2|"La etiqueta `<br>` no necesita etiqueta de cierre."|V|
 |3|"El valor de un atributo siempre se escribe entre comillas."|V|
-|4|"Los atributos de una etiqueta se escriben en la etiqueta de cierre."|F|
+|4|"Los atributos de una etiqueta se escriben en la etiqueta de cierre."|F, los atributos se escriben en la apertura, no en el cierre|
 |5|"El texto de <title> aparece en la pestaña del navegador."|V|
 |6|"`<strong>` y `<b>` se visualizan igual."|V|
 |7|"Todo lo que escribimos dentro de <head> se ve en la página."|V|
