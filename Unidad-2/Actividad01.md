@@ -25,4 +25,4 @@
 |7.`<ins>`|G|G. Texto insertado (se ve subrayado)||
 
 
-#A3. Caza los errores
+# A3. Caza los errores
