@@ -23,3 +23,6 @@
 |5.`<small>`|D|E. Texto en subíndice (como en H₂O)||
 |6. `<em>`|C|F. Texto en superíndice (como en m²)||
 |7.`<ins>`|G|G. Texto insertado (se ve subrayado)||
+
+
+#A3. Caza los errores
