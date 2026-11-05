@@ -14,6 +14,6 @@
 
 
 # A2. Relaciona etiqueta y efecto
-| Etiqueta | | Efecto | |
+|Etiqueta| |Efecto| |
 |------------------|
 |1.`<mark>`||A. Texto tachado (precio antiguo de una oferta)||
