@@ -79,4 +79,6 @@ La etiqueta se cierra primero con el /em
 
 
 
-A6. ¿Qué verá el usuario?
+# A6. ¿Qué verá el usuario?
+Sin abrir el navegador, dibuja o describe lo que se mostrará. Después compruébalo y anota si acertaste.
+
