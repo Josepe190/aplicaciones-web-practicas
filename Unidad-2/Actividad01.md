@@ -8,3 +8,4 @@
 |6|"`<strong>` y `<b>` se visualizan igual."|
 |7|"Todo lo que escribimos dentro de <head> se ve en la página."|
 |8|"La etiqueta `<hr>` se cierra con `</hr>`."
+|9|"Un comentario HTML (<!-- ... -->) se muestra en pantalla como una nota gris."|
