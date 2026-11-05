@@ -17,3 +17,4 @@
 |Etiqueta| |Efecto| |
 |--------|-|------|-|
 |1.`<mark>`||A. Texto tachado (precio antiguo de una oferta)||
+|2.`<del>` ||B. Texto remarcado, como con un fosforito||
