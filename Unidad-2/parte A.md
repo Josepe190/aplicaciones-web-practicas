@@ -136,9 +136,10 @@ Crea plantilla.html con la estructura básica y, en <head>, la codificación utf
 
 
 
-| Requisito | Solución |
-|---|---|
-| Titular y entradilla | `<h1>` para el titular y `<h2>` para la entradilla |
-| Tres párrafos con una línea entre el 2.º y el 3.º | Tres `<p>` y un `<hr>` entre el segundo y el tercero |
-| Autor, fecha y fuente en tres líneas **solo con `<br>`, sin `<p>`** | Texto suelto en el `<body>` separado con `<br>` |
-| Sección "Prueba de tamaños" | Un título y los encabezados `<h1>` a `<h6>` |
+
+| Objetivo | Implementación |
+| :--- | :--- |
+| Título principal y subtítulo | `<h1>` para el título principal y `<h2>` para el subtítulo |
+| Tres bloques de texto con un separador entre el 2.º y el 3.º | Tres `<p>` y una etiqueta `<hr>` entre el segundo y el tercero |
+| Nombre del autor, fecha y medio en tres líneas **únicamente con `<br>`, sin usar `<p>`** | Texto directo dentro del `<body>` dividido con `<br>` |
+| Apartado "Prueba de tamaños" | Un encabezado de sección y las etiquetas de `<h1>` hasta `<h6>` |
