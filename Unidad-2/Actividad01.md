@@ -81,4 +81,20 @@ La etiqueta se cierra primero con el /em
 
 # A6. ¿Qué verá el usuario?
 Sin abrir el navegador, dibuja o describe lo que se mostrará. Después compruébalo y anota si acertaste.
+<h1>Resumen de la jornada</h1>
+<p>Ha ganado el equipo local.<br>El rival se despide del torneo.</p>
+<hr>
+<h4>Próximo partido</h4>
+<p>Sábado a las 18:00</p>
+
+Lo que se deveria mostrar:
+
+Resumen de la jornada
+
+Ha ganado el equipo local.
+El rival se despide del torneo.
+
+Próximo partido
+
+Sábado a las 18:00
 
