@@ -104,7 +104,7 @@ Sábado a las 18:00
 # B1. Tu plantilla para todo el curso
 Crea plantilla.html con la estructura básica y, en <head>, la codificación utf-8, un <title> ("Plantilla de 2.º SMR") y dos <meta>: descripción y autor. En el <body> escribe un comentario que diga Aquí va el contenido. La usarás como punto de partida en el resto del boletín.
 
-`<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -117,4 +117,4 @@ Crea plantilla.html con la estructura básica y, en <head>, la codificación utf
   <!-- Aquí va el contenido -->
 
 </body>
-</html>`
+</html>```
