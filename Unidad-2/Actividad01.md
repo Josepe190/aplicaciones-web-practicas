@@ -1,3 +1,4 @@
+# Parte A. Comprobación y reflexión
 # A1. Verdadero o falso corrige las falsas
 En el grupo de clase se ha montado un debate. Decide quién tiene razón y, si la frase es falsa, reescríbela para que sea correcta.
 | N.º|Afirmación|V/F |
@@ -98,3 +99,22 @@ Próximo partido
 
 Sábado a las 18:00
 
+
+# Parte B. Ejercicios guiados
+# B1. Tu plantilla para todo el curso
+Crea plantilla.html con la estructura básica y, en <head>, la codificación utf-8, un <title> ("Plantilla de 2.º SMR") y dos <meta>: descripción y autor. En el <body> escribe un comentario que diga Aquí va el contenido. La usarás como punto de partida en el resto del boletín.
+
+`<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Plantilla de 2.º SMR</title>
+  <meta name="author" content="Escribe aquí tu nombre y apellidos">
+  <meta name="description" content="Plantilla base HTML5 para las prácticas de Aplicaciones Web">
+</head>
+<body>
+
+  <!-- Aquí va el contenido -->
+
+</body>
+</html>`
