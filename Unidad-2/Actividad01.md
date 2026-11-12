@@ -117,4 +117,18 @@ Crea plantilla.html con la estructura básica y, en <head>, la codificación utf
   <!-- Aquí va el contenido -->
 
 </body>
-</html>```
+</html>
+```
+
+
+| Pieza | Para qué sirve | ¿Se ve en la página? |
+|---|---|---|
+| `<!DOCTYPE html>` | Define el estándar HTML5 | No |
+| `<html lang="es">` | Etiqueta raíz; fija el idioma en español | No |
+| `<meta charset="utf-8">` | Permite mostrar tildes y eñes sin fallos | No |
+| `<meta name="description">` | Sinopsis breve para buscadores | No |
+| `<meta name="author">` | Nombre del alumno (obligatorio en **todas**) | No |
+| `<title>` | Nombre visible en la **pestaña** | Solo en la pestaña |
+| `<!-- ... -->` | Nota interna ignorada por el navegador | **No**, nunca |
+
+
