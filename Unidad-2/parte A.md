@@ -143,3 +143,77 @@ Crea plantilla.html con la estructura básica y, en <head>, la codificación utf
 | Tres bloques de texto con un separador entre el 2.º y el 3.º | Tres `<p>` y una etiqueta `<hr>` entre el segundo y el tercero |
 | Nombre del autor, fecha y medio en tres líneas **únicamente con `<br>`, sin usar `<p>`** | Texto directo dentro del `<body>` dividido con `<br>` |
 | Apartado "Prueba de tamaños" | Un encabezado de sección y las etiquetas de `<h1>` hasta `<h6>` |
+
+
+# B3. Ficha de oferta: el Black Friday de tu tienda
+
+
+| Elemento | Apariencia | Función | Uso en la ficha |
+| :--- | :--- | :--- | :--- |
+| `<b>` | **negrita** | Estilo visual | `<b>AMOLED</b>` |
+| `<strong>` | **negrita** | Contenido **relevante** | `<strong>¡Descuento de 250 €!</strong>` |
+| `<i>` | *cursiva* | Estilo visual (modelos, conceptos) | `<i>Apex Z10</i>` |
+| `<em>` | *cursiva* | Contenido con **énfasis** | `<em>la batería más duradera...</em>` |
+| `<mark>` | fondo amarillo | Destacado tipo marcador | `<mark>¡Promoción...!</mark>` |
+| `<small>` | texto reducido | Letra menuda / textos legales | `<small>Impuestos incluidos...</small>` |
+| `<del>` | ~~tachado~~ | Contenido **descartado** (importe anterior) | `<del>799 €</del>` |
+| `<ins>` | subrayado | Contenido **añadido** (importe actual) | `<ins>549 €</ins>` |
+| `<u>` | subrayado | Estilo visual | `<u>Entrega gratuita</u>` |
+| `<sub>` | subíndice ₂ | Compuestos químicos | `H<sub>2</sub>O` |
+| `<sup>` | superíndice ² | Medidas, referencias | `m<sup>2</sup>`, `pulgadas<sup>1</sup>` |
+
+**¿Qué diferencia visual hay entre `<b>` y `<strong>`? ¿Y entre `<i>` y `<em>`?**
+Ninguna diferencia: `<b>` y `<strong>` aparecen en negrita, mientras que `<i>` y `<em>` se muestran en cursiva.
+
+
+
+# B4. El banner del streamer
+
+| Condición | Etiqueta aplicada |
+| :--- | :--- |
+| `<h1>` con color de fondo lightblue | `<h1 style="background-color:lightblue;">` |
+| `<h2>` alineado al centro | `<h2 style="text-align:center;">` |
+| `<h3>` alineado a la derecha **y** fondo limegreen en un mismo style | `<h3 style="text-align:right; background-color:limegreen;">` |
+| Bloque de texto en rojo | `<p style="color:red;">` |
+| Bloque de texto en azul | `<p style="color:blue;">` |
+| Bloque de texto con tamaño al 150 % | `<p style="font-size:150%;">` |
+
+
+# B5. Paleta de colores de tu marca
+
+
+## Parte 1
+
+| Tono | Palabra clave | Valor RGB | Código HEX | Valor HSL |
+| :--- | :--- | :--- | :--- | :--- |
+| Rojo | `red` | `rgb(255, 0, 0)` | `#ff0000` | `hsl(0, 100%, 50%)` |
+| Naranja | `orange` | `rgb(255, 165, 0)` | `#ffa500` | `hsl(39, 100%, 50%)` |
+
+
+## Parte 2
+
+
+| Consulta | Resultado | Verificación |
+| :--- | :--- | :--- |
+| Denominación oficial de `#3cb371` | **`mediumseagreen`** | Equivale a `rgb(60, 179, 113)` |
+| Código hexadecimal de `rgb(238, 130, 238)` | **`#ee82ee`** | Su denominación es `violet` |
+
+
+## Parte 3 (reflexión, también en un comentario del código)
+
+**¿Qué significa `rgb(0, 0, 255)`?**
+Ausencia de rojo, ausencia de verde y el valor máximo de azul: **azul puro** (`blue`, `#0000ff`).
+
+**¿Qué *hue* corresponde en hsl al rojo, al verde y al azul?**
+El matiz (*hue*) representa un grado dentro del círculo cromático:
+
+| Tono | Ángulo (Hue) |
+| :--- | :--- |
+| Rojo | **0°** (o bien 360°) |
+| Amarillo | 60° |
+| Verde | **120°** |
+| Cian | 180° |
+| Azul | **240°** |
+| Magenta | 300° |
+
+
