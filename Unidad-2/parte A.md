@@ -217,3 +217,77 @@ El matiz (*hue*) representa un grado dentro del círculo cromático:
 | Magenta | 300° |
 
 
+
+
+# B6. El menú del ramen con tipografías de repuesto
+
+# Fuentes en cascada
+
+```html
+<p style="font-family:'Fuente Inventada', Georgia, serif;">
+```
+
+El explorador revisa la lista **de izquierda a derecha** y aplica la **primera que encuentre disponible**. La opción final tiene que ser siempre una **familia genérica**, presente en cualquier sistema operativo.
+
+| Sección del menú | Propiedad font-family | Familia genérica |
+| :--- | :--- | :--- |
+| Título | `'Brush Script MT', 'Comic Sans MS', cursive` | `cursive` (caligráfica) |
+| Descripción | `Arial, Helvetica, sans-serif` | `sans-serif` (palo seco) |
+| Precios | `'Courier New', Courier, monospace` | `monospace` (ancho fijo) |
+| Bloque de prueba | `'Fuente Sakura Inventada', Georgia, serif` | `serif` (con gracias) |
+
+## Las 5 familias genéricas
+
+| Familia | Apariencia | Ejemplos | Aplicación habitual |
+| :--- | :--- | :--- | :--- |
+| `serif` | Con pequeños remates ("patitas") | Times New Roman, Georgia | Publicaciones impresas, prensa |
+| `sans-serif` | Sin adornos, aspecto limpio | Arial, Verdana, Helvetica | Lectura en pantalla (estándar en la web) |
+| `monospace` | Todos los caracteres ocupan el mismo ancho | Courier New, Consolas | Código fuente y cifras alineadas |
+| `cursive` | Simula el trazo manual | Brush Script MT, Comic Sans MS | Únicamente encabezados breves |
+| `fantasy` | Estilo ornamental | Impact, Papyrus | Únicamente encabezados breves |
+
+## Respuesta a la pregunta (también en un comentario del código)
+**¿Por qué debe ser fácil de leer el tipo de letra de un sitio web?**
+
+Porque las webs están hechas para leerse. Una tipografía compleja fatiga la vista, provoca que el visitante abandone el sitio y dificulta la lectura a personas con baja visión o dislexia (**accesibilidad**). Además, una letra limpia se adapta bien a cualquier pantalla (móvil, tableta u ordenador). Las fuentes ornamentales deben reservarse solo para encabezados breves.
+
+
+# B7. Cartel de festival con `<span>` y bordes
+## La propiedad `border`
+```css
+border: grosor estilo color;
+```
+
+Los tres valores se dividen mediante **espacios** (sin usar comas) y su posición no importa, si bien lo normal es seguir el orden grosor-estilo-color.
+
+
+| Condición | Regla aplicada |
+| :--- | :--- |
+| `<h1>` con contorno de 5 px, sólido y verde | `border:5px solid green;` |
+| Bloque de texto con contorno punteado azul de 3 px | `border:3px dotted blue;` |
+| Bloque de texto con fondo lightpink y contorno doble rojo de 5 px | `background-color:lightpink; border:5px double red;` |
+| Nombre del artista en azul | `<span style="color:blue;">` |
+| Nombre del artista en verde al 200 % | `<span style="color:green; font-size:200%;">` |
+
+## Estilos de borde
+
+| Propiedad | Apariencia |
+| :--- | :--- |
+| `solid` | Trazo continuo ─── |
+| `dotted` | Sucesión de puntos ····· |
+| `dashed` | Línea discontinua - - - |
+| `double` | Trazo doble ═══ (requiere mínimo 3 px para apreciarse) |
+| `groove` / `ridge` | Relieve 3D biselado (hundido / elevado) |
+| `inset` / `outset` | Relieve 3D tipo botón (pulsado / saliente) |
+| `none` | Sin contorno |
+
+## Respuesta a la pregunta (también en un comentario del código)
+**¿Qué diferencia hay entre `<span>` y `<p>` para destacar parte de un texto?**
+
+| Característica | `<p>` | `<span>` |
+| :--- | :--- | :--- |
+| Categoría | Etiqueta de **bloque** | Etiqueta **en línea** |
+| Comportamiento de línea | Inicia en una línea nueva | No provoca ningún salto |
+| Espacio ocupado | Abarca todo el ancho disponible | Se ajusta solo al tamaño de su contenido |
+| Aplicación habitual | Bloques de texto completos | Fragmentos concretos dentro de una oración |
+
