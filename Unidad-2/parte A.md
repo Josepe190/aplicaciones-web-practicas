@@ -132,3 +132,13 @@ Crea plantilla.html con la estructura básica y, en <head>, la codificación utf
 | `<!-- ... -->` | Nota interna ignorada por el navegador | **No**, nunca |
 
 
+# B2. La noticia del día: ¿la IA te quitará el trabajo?
+
+
+
+| Requisito | Solución |
+|---|---|
+| Titular y entradilla | `<h1>` para el titular y `<h2>` para la entradilla |
+| Tres párrafos con una línea entre el 2.º y el 3.º | Tres `<p>` y un `<hr>` entre el segundo y el tercero |
+| Autor, fecha y fuente en tres líneas **solo con `<br>`, sin `<p>`** | Texto suelto en el `<body>` separado con `<br>` |
+| Sección "Prueba de tamaños" | Un título y los encabezados `<h1>` a `<h6>` |
