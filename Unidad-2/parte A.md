@@ -292,33 +292,24 @@ Los tres valores se dividen mediante **espacios** (sin usar comas) y su posició
 | Aplicación habitual | Bloques de texto completos | Fragmentos concretos dentro de una oración |
 
 # B8. Etiquetas anidadas: el mensaje urgente
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Ejercicio B8 etiquetas anidadas">
-  <meta name="author" content="Pon aquí tu nombre">
-  <title>B8 - Etiquetas anidadas</title>
-</head>
-<body>
-  <h1>Aviso del servicio de ciberseguridad</h1>
+## B8. Etiquetas anidadas: el mensaje urgente
 
-  <h2>Versión correcta</h2>
-  <p><b><i><u>Alerta: no descargues archivos adjuntos de remitentes desconocidos, pueden contener malware.</u></i></b></p>
+```html
+<h1>Aviso del servicio de ciberseguridad</h1>
 
-  <!--
-    Cierre correcto: </u> </i> </b>
-    Se cierran al revés de como se abren. La última etiqueta que abres (<u>) 
-    tiene que ser la primera en cerrarse para que el código esté bien anidado.
-  -->
+<h2>Versión correcta</h2>
+<p><b><i><u>Alerta: no descargues archivos adjuntos de remitentes desconocidos, pueden contener malware.</u></i></b></p>
 
-  <h2>Versión mal cerrada</h2>
-  <p><b><i><u>Alerta: no descargues archivos adjuntos de remitentes desconocidos, pueden contener malware.</b></i></u> Este texto tendría que salir normal.</p>
+<!--
+  Cierre correcto: </u> </i> </b>
+  Se cierran al revés de como se abren. La última etiqueta que abres (<u>) 
+  tiene que ser la primera en cerrarse para que el código esté bien anidado.
+-->
 
-  <!--
-    Lo que hace el navegador: Aunque las etiquetas estén mal cerradas, el 
-    navegador lo corrige solo al cargar la página y el texto siguiente se 
-    ve normal sin arrastrar los estilos.
-  -->
-</body>
-</html>
+<h2>Versión mal cerrada</h2>
+<p><b><i><u>Alerta: no descargues archivos adjuntos de remitentes desconocidos, pueden contener malware.</b></i></u> Este texto tendría que salir normal.</p>
+```
+
+**¿Qué hace el navegador en la versión mal cerrada?**
+Aunque las etiquetas estén mal cerradas, el navegador corrige el fallo por su cuenta al cargar la página y el texto siguiente sale normal sin arrastrar la negrita, la cursiva ni el subrayado.
+
