@@ -292,7 +292,6 @@ Los tres valores se dividen mediante **espacios** (sin usar comas) y su posició
 | Aplicación habitual | Bloques de texto completos | Fragmentos concretos dentro de una oración |
 
 # B8. Etiquetas anidadas: el mensaje urgente
-## B8. Etiquetas anidadas: el mensaje urgente
 
 ```html
 <h1>Aviso del servicio de ciberseguridad</h1>
@@ -313,3 +312,55 @@ Los tres valores se dividen mediante **espacios** (sin usar comas) y su posició
 **¿Qué hace el navegador en la versión mal cerrada?**
 Aunque las etiquetas estén mal cerradas, el navegador corrige el fallo por su cuenta al cargar la página y el texto siguiente sale normal sin arrastrar la negrita, la cursiva ni el subrayado.
 
+
+
+# Parte C. Práctica 1. Formato de texto
+
+## Práctica 1 (UD2) - Formato de texto con HTML y CSS
+
+### Reflexión previa
+1. **Párrafos y justificación:** Se utiliza la etiqueta `<p>` junto con la propiedad CSS `text-align: justify;`.
+2. **Marcar partes de un párrafo:** Se usan etiquetas en línea como `<i>`, `<b>` o `<span>`.
+3. **Control de colores por sentimiento:** Creando una lista previa (o un comentario en el código) asociando cada sentimiento a un código de color hexadecimal concreto para consultarlo siempre.
+
+### Código HTML
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Práctica 1 de la UD2: formato de texto con HTML y CSS">
+  <meta name="author" content="Pon aquí tu nombre">
+  <title>Práctica 1 - Formato de texto</title>
+</head>
+<body style="background-color:#eaf2f8;">
+
+  <!-- 
+    Lista de colores por sentimiento:
+    - Sentimiento 1: #1f618d
+    - Sentimiento 2: #b03a2e
+    - Sentimiento 3: #1e8449
+    - Sentimiento 4: #b7950b
+  -->
+
+  <h2 style="text-align:center; border:1px solid #1f618d;">TÍTULO DEL TEXTO DEL ARCHIVO TXT</h2>
+
+  <p style="text-align:justify;">Párrafo 1 del txt con <i>"comentarios entre comillas en cursiva"</i> y <b style="color:#1f618d;">sentimientos</b> en negrita y color.</p>
+
+  <p style="text-align:justify;">Párrafo 2 del txt.</p>
+
+  <p style="text-align:justify;">Párrafo 3 del txt.</p>
+
+  <p style="text-align:justify;">Párrafo 4 del txt.</p>
+
+  <p style="text-align:justify;">Párrafo 5 del txt.</p>
+
+  <p style="text-align:justify;">Párrafo 6 del txt.</p>
+
+  <p style="text-align:justify;">Párrafo 7 del txt.</p>
+
+  <p style="text-align:justify;">Párrafo 8 del txt.<br><b style="color:#ffffff; background-color:#1f618d; font-size:200%;">ÚLTIMA FRASE DEL TXT EN MAYÚSCULAS.</b></p>
+</body>
+</html>
+```
