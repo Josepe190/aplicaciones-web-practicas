@@ -28,11 +28,12 @@
 
 ## A3. ¿Absoluto o relativo?
 
+
 | N.º | Dirección | Tipo | Por qué |
 |---|---|---|---|
-| 1 | `https://www.w3.org/` | **Absoluto** | Lleva protocolo y dominio. |
-| 2 | `paginas/contacto.html` | **Relativo** | Ruta desde la carpeta de la página actual. |
-| 3 | `/css/default.asp` | **Relativo** (a la raíz) | Empieza por `/`: se busca desde la carpeta raíz del sitio web, pero sin dominio. |
-| 4 | `https://www.google.com/` | **Absoluto** | Lleva protocolo y dominio. |
-| 5 | `./apuntes.pdf` | **Relativo** | `./` significa "la carpeta actual". |
-| 6 | `imagenes/logo.png` | **Relativo** | Entra en la subcarpeta `imagenes`. |
+| 1 | `https://w3.org` | Absoluto | Especifica la dirección completa en internet, incluyendo `https://` y el dominio. |
+| 2 | `paginas/contacto.html` | Relativo | Busca el archivo partiendo desde la misma ubicación donde está la web abierta. |
+| 3 | `/css/default.asp` | Relativo (a la raíz) | La barra inicial `/` indica que debe buscarse desde la carpeta base del proyecto, sin usar dominio. |
+| 4 | `https://google.com` | Absoluto | Es una URL externa completa que contiene protocolo de seguridad y dominio propio. |
+| 5 | `./apuntes.pdf` | Relativo | El punto y la barra `./` le indican al navegador que mire dentro de la carpeta actual. |
+| 6 | `imagenes/logo.png` | Relativo | Navega directamente hacia adentro de la carpeta `imagenes` tomando como base el sitio actual. |
