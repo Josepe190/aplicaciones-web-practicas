@@ -118,3 +118,14 @@ El código está en `index.html`, en la carpeta `proyecto/`.
 | `<a href="apuntes.pdf">Apuntes</a>` | Sí | | |
 | `<a href="imagenes/apuntes.pdf">Apuntes</a>` | No | El PDF no está guardado en `imagenes/`, sino en la misma carpeta que `index.html`. | `href="apuntes.pdf"` |
 | `<img src="imagenes/equipo.png" alt="Equipo">` | No | La extensión correcta de la imagen es `.jpg` y no `.png`. | `src="imagenes/equipo.jpg"` |
+
+
+
+| Código | ¿Funciona? | Motivo | Corrección |
+|---|---|---|---|
+| `<img src="logo.png" alt="Logo">` | ❌ | `logo.png` está dentro de `imagenes/`. | `src="imagenes/logo.png"` |
+| `<img src="imagenes/equipo.jpg" alt="Equipo">` | ✅ | | |
+| `<a href="Contacto.html">Contacto</a>` | ❌ | El archivo es `contacto.html` en minúsculas, y en muchos servidores no es lo mismo. | `href="contacto.html"` |
+| `<a href="apuntes.pdf">Apuntes</a>` | ✅ | | |
+| `<a href="imagenes/apuntes.pdf">Apuntes</a>` | ❌ | `apuntes.pdf` no está en `imagenes/`, sino junto a `index.html`. | `href="apuntes.pdf"` |
+| `<img src="imagenes/equipo.png" alt="Equipo">` | ❌ | La foto es `.jpg`, no `.png`. | `src="imagenes/equipo.jpg"` |
