@@ -49,3 +49,38 @@
 | SVG | Scalable Vector Graphics | `.svg` |
 | ICO | Microsoft Icon | `.ico` |
 | APNG | Animated Portable Network Graphics | `.apng` |
+
+
+## A5. Caza los errores de la galería
+
+### Código original
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi galería</title>
+</head>
+<body>
+<h1>Mi viaje de fin de curso</h1>
+<img>src="playa.jpg" alt="Playa al atardecer"</img>
+<img src="monte.jpg" style="width=300px; height=200px;">
+<a href=https://www.wikipedia.org target="_blank">Más información sobre el destino
+</body>
+</html>
+```
+
+### Errores encontrados
+
+
+| N.º | Error | Explicación | Corrección |
+|---|---|---|---|
+| 1 | `<img>src="playa.jpg" ...` | La etiqueta `<img>` se cierra antes de tiempo y los atributos quedan sueltos fuera de ella como texto normal. | `<img src="playa.jpg" alt="Playa al atardecer">` |
+| 2 | `</img>` | La etiqueta `<img>` es un elemento vacío y no utiliza etiqueta de cierre. | Quitar `</img>`. |
+| 3 | `width=300px; height=200px;` | Dentro de CSS se deben usar dos puntos (`:`) para asignar valores a las propiedades, en lugar del signo igual (`=`). | `width:300px; height:200px;` |
+| 4 | Segunda imagen sin `alt` | Es obligatorio incluir el atributo `alt` en todas las imágenes para describir su contenido. | `alt="Vista del monte"` |
+| 5 | Enlace sin cerrar | Falta la etiqueta de cierre `</a>`, por lo que el enlace queda abierto. | Añadir `</a>`. |
+| 6 | `href=https://...` sin comillas | Según las pautas del curso, todos los valores de los atributos deben ir entre comillas. | `href="https://www.wikipedia.org"` |
+| 7 | Falta `lang` y `meta author` | Requisito de estructura y buenas prácticas indicadas en el boletín. | `<html lang="es">` y `<meta name="author">` |
+
