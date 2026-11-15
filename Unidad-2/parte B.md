@@ -120,12 +120,17 @@ El código está en `index.html`, en la carpeta `proyecto/`.
 | `<img src="imagenes/equipo.png" alt="Equipo">` | No | La extensión correcta de la imagen es `.jpg` y no `.png`. | `src="imagenes/equipo.jpg"` |
 
 
+## A7. ¿Qué verá el usuario?
 
-| Código | ¿Funciona? | Motivo | Corrección |
-|---|---|---|---|
-| `<img src="logo.png" alt="Logo">` | ❌ | `logo.png` está dentro de `imagenes/`. | `src="imagenes/logo.png"` |
-| `<img src="imagenes/equipo.jpg" alt="Equipo">` | ✅ | | |
-| `<a href="Contacto.html">Contacto</a>` | ❌ | El archivo es `contacto.html` en minúsculas, y en muchos servidores no es lo mismo. | `href="contacto.html"` |
-| `<a href="apuntes.pdf">Apuntes</a>` | ✅ | | |
-| `<a href="imagenes/apuntes.pdf">Apuntes</a>` | ❌ | `apuntes.pdf` no está en `imagenes/`, sino junto a `index.html`. | `href="apuntes.pdf"` |
-| `<img src="imagenes/equipo.png" alt="Equipo">` | ❌ | La foto es `.jpg`, no `.png`. | `src="imagenes/equipo.jpg"` |
+```html
+<h2>Mi mascota</h2>
+<img src="gato.jpg" alt="Gato durmiendo" style="float: right;">
+<p>Se llama Miau y duerme catorce horas al día. Cuando está despierto, intenta apagar el router.</p>
+<a href="https://www.w3.org/" target="_blank"><img src="logo.png" alt="W3C"></a>
+```
+
+(a) La foto del gato se alinea en el margen derecho junto al párrafo, mientras que el texto se adapta a su lado izquierdo.
+
+(b) En caso de que no se encuentre el archivo `gato.jpg`, el navegador mostrará el icono de error de carga acompañado de la descripción "Gato durmiendo" (definida en `alt`), manteniendo su posición a la derecha.
+
+(c) Pulsar sobre el logotipo cargará la página https://www.w3.org/ en una pestaña distinta del navegador, ya que la imagen actúa como enlace y tiene asignado el atributo `target="_blank"`.
