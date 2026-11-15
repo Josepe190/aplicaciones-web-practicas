@@ -104,3 +104,17 @@
 </body>
 </html>
 ```
+
+
+## A6. Rutas que no funcionan
+
+El código está en `index.html`, en la carpeta `proyecto/`.
+
+| Código | ¿Funciona? | Motivo | Corrección |
+|---|---|---|---|
+| `<img src="logo.png" alt="Logo">` | No | El archivo `logo.png` se encuentra dentro de la subcarpeta `imagenes/`. | `src="imagenes/logo.png"` |
+| `<img src="imagenes/equipo.jpg" alt="Equipo">` | Sí | | |
+| `<a href="Contacto.html">Contacto</a>` | No | El nombre real es `contacto.html` todo en minúsculas, y los servidores diferencian mayúsculas de minúsculas. | `href="contacto.html"` |
+| `<a href="apuntes.pdf">Apuntes</a>` | Sí | | |
+| `<a href="imagenes/apuntes.pdf">Apuntes</a>` | No | El PDF no está guardado en `imagenes/`, sino en la misma carpeta que `index.html`. | `href="apuntes.pdf"` |
+| `<img src="imagenes/equipo.png" alt="Equipo">` | No | La extensión correcta de la imagen es `.jpg` y no `.png`. | `src="imagenes/equipo.jpg"` |
