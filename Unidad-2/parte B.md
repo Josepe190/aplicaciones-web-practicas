@@ -176,12 +176,6 @@ El atributo `src` apunta a `gato_patio_error.jpeg`, un archivo que no existe en 
 
 Al utilizar `style` aplicamos el tamaño directamente como código CSS, separando el diseño de la estructura HTML. De esta manera se evita que una hoja de estilos externa modifique las medidas por accidente y se mantiene todo el estilo unificado. Los atributos clásicos `width` y `height` siguen siendo válidos, pero tienen menor prioridad frente a las reglas CSS.
 
-### Qué recordar
-
-- La etiqueta `<img>` es vacía y no se cierra; necesita los atributos `src` (ruta del archivo) y `alt` (descripción alternativa).
-- Al usar `style` se debe indicar siempre la unidad de medida (`width:200px;`), mientras que en los atributos HTML solo se escribe el número (`width="200"`).
-
-
 
 
 ## B2. Perfil de una red social
@@ -213,11 +207,6 @@ Al utilizar `style` aplicamos el tamaño directamente como código CSS, separand
 - `float: right`: desplaza la imagen hacia el borde derecho y permite que el texto la rodee por su lado izquierdo.
 - `float: none` (es el comportamiento por defecto): la imagen no flota hacia los lados, se queda en su posición normal dentro de la línea y el texto no la envuelve.
 
-### Qué recordar
-
-- Para apreciar bien cómo el texto rodea a una imagen flotante, los párrafos deben tener suficiente longitud o la imagen debe ajustarse con `width` para que no ocupe todo el ancho.
-- Sintaxis del borde en CSS: `border: grosor estilo color;` (por ejemplo, `border: 5px solid green;`).
-## B2. Perfil de una red social
 
 ```html
 <!DOCTYPE html>
@@ -246,10 +235,7 @@ Al utilizar `style` aplicamos el tamaño directamente como código CSS, separand
 - `float: right`: desplaza la imagen hacia el borde derecho y permite que el texto la rodee por su lado izquierdo.
 - `float: none` (es el comportamiento por defecto): la imagen no flota hacia los lados, se queda en su posición normal dentro de la línea y el texto no la envuelve.
 
-### Qué recordar
 
-- Para apreciar bien cómo el texto rodea a una imagen flotante, los párrafos deben tener suficiente longitud o la imagen debe ajustarse con `width` para que no ocupe todo el ancho.
-- Sintaxis del borde en CSS: `border: grosor estilo color;` (por ejemplo, `border: 5px solid green;`).
 
 
 ## B3. ¿Qué formato elijo?
@@ -276,8 +262,7 @@ Al utilizar `style` aplicamos el tamaño directamente como código CSS, separand
 </body>
 </html>
 ```
-
-### Qué recordar
+### recuerda
 
 | Necesidad | Formato |
 |---|---|
@@ -314,20 +299,102 @@ Al utilizar `style` aplicamos el tamaño directamente como código CSS, separand
 
 Sin aplicar estilos personalizados, los navegadores muestran un enlace pendiente de visitar en color azul y subrayado, mientras que un enlace ya visitado aparece en color morado. Si se mantiene pulsado (estado activo), cambia momentáneamente a rojo.
 
-### Qué recordar
-
-| Atributo | Función |
-|---|---|
-| `href` | Define la dirección URL de destino del enlace |
-| sin `target` (o `target="_self"`) | Carga la página en la pestaña actual |
-| `target="_blank"` | Abre el destino en una pestaña o ventana nueva |
 
 
 
 
 
 
+## B5. Enlaces con imagen
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B5. Enlaces con imagen</title>
+</head>
+<body>
+  <h1>Enlaces utilizando imágenes</h1>
+  <p><a href="https://wikipedia.org" target="_blank"><img src="imagenes/gato_patio.jpeg" alt="Acceder a Wikipedia en una pestaña nueva" style="width:150px;"></a></p>
+  <p><a href="https://google.com"><img src="imagenes/gato_limpiandose.png" alt="Miniatura para ir al buscador" style="width:40px;"> Buscar información en Google</a></p>
+  <!--
+    Enlace 1: su destino es https://wikipedia.org, el rótulo está formado únicamente por la imagen gato_patio.jpeg y su objetivo es _blank para abrirse en una pestaña nueva.
+    Enlace 2: su destino es https://google.com, el rótulo combina la imagen gato_limpiandose.png junto con el texto "Buscar información en Google", y su objetivo es abrirse en la misma pestaña al no tener atributo target.
+  -->
+</body>
+</html>
+```
 
 
 
 
+
+
+
+## B6. Mini web de tres páginas
+
+### `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Inicio</title>
+</head>
+<body>
+  <h1>Página principal de Josep</h1>
+  <p><a href="sobre-mi.html">Sobre mí</a> | <a href="contacto.html">Contacto</a></p>
+  <img src="imagenes/gato_sofa.jpeg" alt="Foto de mi gato descansando en el sofá" style="width:200px;">
+  <p>Bienvenido a mi sitio web de tres páginas conectadas mediante enlaces relativos.</p>
+</body>
+</html>
+```
+
+### `sobre-mi.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Sobre mí</title>
+</head>
+<body>
+  <h1>Conoce un poco sobre mí</h1>
+  <p><a href="index.html">Inicio</a> | <a href="contacto.html">Contacto</a></p>
+  <p>Soy Josep, estudiante de Aplicaciones Web en 2.º de SMR, y estoy practicando la creación de sitios en HTML y CSS.</p>
+</body>
+</html>
+```
+
+### `contacto.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Contacto</title>
+</head>
+<body>
+  <h1>Formas de contacto</h1>
+  <p><a href="index.html">Inicio</a> | <a href="sobre-mi.html">Sobre mí</a></p>
+  <p>Puedes consultar más información y recursos de desarrollo web en <a href="https://w3.org" target="_blank">W3C</a>.</p>
+</body>
+</html>
+```
+
+### Respuesta a la pregunta
+
+Si trasladamos `contacto.html` a otra carpeta diferente (por ejemplo, a una subcarpeta `paginas/`), fallarían todos los enlaces relativos relacionados con ese archivo:
+
+- Los enlaces situados en `index.html` y `sobre-mi.html` que apuntan a `contacto.html` darían error al no encontrarlo en el mismo directorio (habría que cambiarlos a `paginas/contacto.html`).
+- Los enlaces del menú dentro de `contacto.html` hacia `index.html` y `sobre-mi.html` también dejarían de funcionar, ya que necesitarían retroceder un nivel de carpeta usando `../index.html` y `../sobre-mi.html`.
+
+Por el contrario, el enlace absoluto hacia la web externa seguiría funcionando sin problemas porque incluye la URL completa con protocolo y dominio.
