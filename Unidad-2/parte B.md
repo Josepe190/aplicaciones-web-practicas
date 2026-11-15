@@ -398,3 +398,167 @@ Si trasladamos `contacto.html` a otra carpeta diferente (por ejemplo, a una subc
 - Los enlaces del menú dentro de `contacto.html` hacia `index.html` y `sobre-mi.html` también dejarían de funcionar, ya que necesitarían retroceder un nivel de carpeta usando `../index.html` y `../sobre-mi.html`.
 
 Por el contrario, el enlace absoluto hacia la web externa seguiría funcionando sin problemas porque incluye la URL completa con protocolo y dominio.
+
+
+
+
+
+
+
+## B7. Tu propia chuleta
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B7. Tu propia chuleta</title>
+</head>
+<body>
+  <h1>Chuleta de etiquetas HTML y CSS</h1>
+  <p><a href="chuleta.pdf">Ver chuleta en la misma ventana</a></p>
+  <p><a href="chuleta.pdf" target="_blank">Abrir chuleta en una pestaña nueva</a></p>
+  <p><a href="https://w3schools.com" target="_blank">Tutorial de referencia HTML en W3Schools</a></p>
+</body>
+</html>
+```
+
+### Respuesta a la pregunta
+
+Si eliminamos el archivo `chuleta.pdf` de la carpeta, ambos enlaces relativos se romperán y, al hacer clic sobre ellos, el navegador mostrará un mensaje indicando que no encuentra el archivo (en un servidor web devolvería un error 404). En cambio, el enlace externo seguirá funcionando correctamente porque apunta a una dirección de internet independiente de nuestros archivos locales.
+
+
+
+
+
+
+
+
+## Parte C. Práctica 2. Las estaciones (enlaces e imágenes)
+
+### Reflexión previa
+
+1. ¿Qué ruta relativa usará `estaciones.html` para cargar `primavera.jpg`?
+
+`imagenes/primavera.jpg`: como `estaciones.html` está en la carpeta raíz del proyecto, solo tiene que entrar en el subdirectorio `imagenes` para localizar el archivo.
+
+2. ¿Qué pasaría si movieras las páginas de cada estación a una carpeta `paginas/`?
+
+Todas las rutas relativas dejarían de funcionar. Desde dentro de `paginas/` habría que subir un nivel usando `../imagenes/primavera.jpg` para mostrar las fotos y `../estaciones.html` para el enlace de regreso, mientras que en `estaciones.html` habría que cambiar los enlaces a `paginas/primavera.html`.
+
+3. Si las fotos miden 600 × 600 y deben verse a 300 × 300, ¿las recortas o cambias el tamaño con HTML/CSS?
+
+Cambio sus dimensiones con CSS (`width:300px; height:300px;`). De este modo reutilizo exactamente el mismo archivo en ambas páginas sin recortar ninguna zona y, al mantener la proporción cuadrada, la imagen no se deforma.
+
+### Estructura de ficheros
+
+```text
+estaciones/
+├── imagenes/
+│   ├── primavera.jpg
+│   ├── verano.jpg
+│   ├── otono.jpg
+│   └── invierno.jpg
+├── estaciones.html
+├── primavera.html
+├── verano.html
+├── otono.html
+└── invierno.html
+```
+
+### `estaciones.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Estaciones</title>
+</head>
+<body>
+  <h1>ESTACIONES</h1>
+  <h2>Primavera</h2>
+  <a href="primavera.html"><img src="imagenes/primavera.jpg" alt="Paisaje florido de primavera" style="width:300px; height:300px; border:5px solid forestgreen;"></a>
+  <h2>Verano</h2>
+  <a href="verano.html"><img src="imagenes/verano.jpg" alt="Playa soleada de verano" style="width:300px; height:300px; border:5px solid darkorange;"></a>
+  <h2>Otoño</h2>
+  <a href="otono.html"><img src="imagenes/otono.jpg" alt="Bosque con hojas secas de otoño" style="width:300px; height:300px; border:5px solid peru;"></a>
+  <h2>Invierno</h2>
+  <a href="invierno.html"><img src="imagenes/invierno.jpg" alt="Montañas nevadas de invierno" style="width:300px; height:300px; border:5px solid royalblue;"></a>
+</body>
+</html>
+```
+
+### `primavera.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Primavera</title>
+</head>
+<body>
+  <h1>Primavera</h1>
+  <img src="imagenes/primavera.jpg" alt="Paisaje florido de primavera" style="width:600px; height:600px; border:5px solid forestgreen;">
+  <p><a href="estaciones.html">Volver a la página principal</a></p>
+</body>
+</html>
+```
+
+### `verano.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Verano</title>
+</head>
+<body>
+  <h1>Verano</h1>
+  <img src="imagenes/verano.jpg" alt="Playa soleada de verano" style="width:600px; height:600px; border:5px solid darkorange;">
+  <p><a href="estaciones.html">Volver a la página principal</a></p>
+</body>
+</html>
+```
+
+### `otono.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Otoño</title>
+</head>
+<body>
+  <h1>Otoño</h1>
+  <img src="imagenes/otono.jpg" alt="Bosque con hojas secas de otoño" style="width:600px; height:600px; border:5px solid peru;">
+  <p><a href="estaciones.html">Volver a la página principal</a></p>
+</body>
+</html>
+```
+
+### `invierno.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>Invierno</title>
+</head>
+<body>
+  <h1>Invierno</h1>
+  <img src="imagenes/invierno.jpg" alt="Montañas nevadas de invierno" style="width:600px; height:600px; border:5px solid royalblue;">
+  <p><a href="estaciones.html">Volver a la página principal</a></p>
+</body>
+</html>
+```
