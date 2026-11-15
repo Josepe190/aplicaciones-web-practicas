@@ -84,3 +84,23 @@
 | 6 | `href=https://...` sin comillas | Según las pautas del curso, todos los valores de los atributos deben ir entre comillas. | `href="https://www.wikipedia.org"` |
 | 7 | Falta `lang` y `meta author` | Requisito de estructura y buenas prácticas indicadas en el boletín. | `<html lang="es">` y `<meta name="author">` |
 
+
+
+### Versión corregida
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Claudio">
+  <title>Mi galería</title>
+</head>
+<body>
+  <h1>Mi viaje de fin de curso</h1>
+  <img src="playa.jpg" alt="Playa al atardecer">
+  <img src="monte.jpg" alt="Vista del monte" style="width:300px; height:200px;">
+  <a href="https://www.wikipedia.org" target="_blank">Más información sobre el destino</a>
+</body>
+</html>
+```
