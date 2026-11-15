@@ -93,7 +93,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Claudio">
+  <meta name="author" content="Josep">
   <title>Mi galería</title>
 </head>
 <body>
