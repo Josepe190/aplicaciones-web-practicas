@@ -11,3 +11,16 @@
 | 6 | "`target="_blank"` hace que el enlace se abra en una ventana (pestaña) nueva." | V | Si se omite este atributo, el destino se carga por defecto en la misma pestaña. |
 | 7 | "Por defecto, un enlace ya visitado se ve azul y uno por visitar, morado." | F | Ocurre justo lo contrario: sin visitar se muestra azul (y subrayado), mientras que el visitado pasa a ser morado. |
 | 8 | "Un enlace relativo escribe la URL completa, incluido el dominio." | F | Esa definición corresponde a una ruta absoluta. Una ruta relativa parte de la ubicación del archivo actual (por ejemplo, `docs/info.html`). |
+
+
+## A2. Relaciona atributo y función
+
+| Elemento | Descripción | Respuesta |
+|---|---|---|
+| 1. `src` | D. Ruta del archivo de imagen | 1-D |
+| 2. `alt` | G. Texto que se muestra si la imagen no carga | 2-G |
+| 3. `href` | B. Indica el destino del enlace | 3-B |
+| 4. `target` | F. Indica dónde se abrirá el destino del enlace | 4-F |
+| 5. `id` | A. Crea un marcador (bookmark) dentro de la página | 5-A |
+| 6. `float` | E. Propiedad CSS para que la imagen flote junto al texto | 6-E |
+| 7. `_blank` | C. Valor de `target` que abre una pestaña nueva | 7-C |
