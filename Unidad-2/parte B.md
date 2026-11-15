@@ -562,3 +562,52 @@ estaciones/
 </body>
 </html>
 ```
+
+
+
+# Parte A. Comprobación y reflexión
+
+## A1. Verdadero o falso
+
+| N.º | Afirmación | V / F | Respuesta y corrección |
+|---|---|---|---|
+| 1 | "Para crear un bookmark se añade el atributo `id` a una etiqueta de la página." | V | Por ejemplo, colocando `<h2 id="contacto">` en un encabezado. |
+| 2 | "`<a href="#S4">` salta al elemento con `id="S4"` de la misma página." | V | El símbolo `#` le indica al navegador que busque ese identificador dentro del documento actual. |
+| 3 | "Dos elementos de la misma página pueden tener el mismo `id`." | F | Cada atributo `id` debe ser único dentro de un mismo documento HTML. |
+| 4 | "`<a href="guia.html#wifi">` abre `guia.html` directamente en la sección con ese `id`." | V | Carga el archivo `guia.html` y desplaza la vista hasta el elemento marcado con `id="wifi"`. |
+| 5 | "Los identificadores `Precios` y `precios` son el mismo." | F | Los valores de `id` son sensibles a mayúsculas y minúsculas, por lo que se consideran dos identificadores diferentes. |
+
+## A2. ¿Qué pasa al hacer clic?
+
+```html
+<!-- Caso A -->
+<a href="#precios">Ver precios</a>
+<h2 id="precios">Precios</h2>
+
+<!-- Caso B -->
+<a href="#Precios">Ver precios</a>
+<h2 id="precios">Precios</h2>
+
+<!-- Caso C -->
+<a href="guia.html#instalacion">Ir a la instalación</a>
+```
+
+| Caso | Qué pasa |
+|---|---|
+| A | El navegador desplaza la pantalla directamente hasta el subtítulo "Precios", ya que `#precios` coincide exactamente con `id="precios"`. |
+| B | No ocurre ningún desplazamiento. Como `#Precios` empieza por mayúscula y el atributo está en minúscula (`id="precios"`), el navegador no encuentra coincidencia y se queda en el mismo sitio. |
+| C | Se abre el archivo `guia.html` en la pestaña actual y se posiciona automáticamente en la parte que tenga `id="instalacion"`. Si ese identificador no existe, muestra la página desde el inicio. |
+
+## A3. Reflexiona
+
+1. ¿En qué tipo de páginas resulta más útil un índice con bookmarks?
+
+Resulta especialmente práctico en documentos extensos divididos en varios apartados, como manuales de usuario, apuntes largos, páginas de preguntas frecuentes (FAQ) o artículos técnicos. Permite al visitante saltar de inmediato al tema que le interesa sin tener que hacer scroll por todo el texto.
+
+2. Al final de cada sección habrá un enlace de vuelta al índice. ¿A qué `id` debe apuntar y dónde tienes que ponerlo?
+
+Debe apuntar a un `id` situado en la zona superior de la página, justo donde comienza el documento o el índice (por ejemplo, `<h1 id="arriba">`), mediante el enlace `<a href="#arriba">Volver arriba</a>`. Ese identificador solo se define una vez arriba, mientras que el enlace de regreso se incluye al cierre de cada apartado.
+
+3. ¿Qué pasaría si dos secciones tuvieran el mismo `id`?
+
+El código HTML dejaría de ser válido según el estándar (daría error en cualquier validador) y, al pulsar el enlace, el navegador se detendría siempre en la primera aparición de ese `id`, haciendo imposible acceder a la segunda sección desde el índice.
