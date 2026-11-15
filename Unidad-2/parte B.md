@@ -137,13 +137,9 @@ El código está en `index.html`, en la carpeta `proyecto/`.
 
 
 
-## Nivel 2 · B1. Galería de tu setup
+## B1. Galería de tu setup
 
-> Todos los ejercicios van en la carpeta `boletin_html2/`, con las imágenes en `boletin_html2/imagenes/`.
->
-> Muestra tres veces la misma imagen: a tamaño original; a 200 × 150 px con el atributo style; y a 200 × 150 con los atributos width y height. Todas con alt. Después rompe a propósito el nombre de una en el `src` y observa qué se muestra. Pregunta (en un comentario): ¿por qué se recomienda `style` frente a `width` y `height`?
 
-### Código: `b1.html`
 
 ```html
 <!DOCTYPE html>
@@ -184,3 +180,154 @@ Al utilizar `style` aplicamos el tamaño directamente como código CSS, separand
 
 - La etiqueta `<img>` es vacía y no se cierra; necesita los atributos `src` (ruta del archivo) y `alt` (descripción alternativa).
 - Al usar `style` se debe indicar siempre la unidad de medida (`width:200px;`), mientras que en los atributos HTML solo se escribe el número (`width="200"`).
+
+
+
+
+## B2. Perfil de una red social
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B2. Perfil de una red social</title>
+</head>
+<body>
+  <h1>Josep Tech</h1>
+  <img src="imagenes/gato_sofa.jpeg" alt="Foto de perfil de mi gato acurrucado en el sofá" style="width:180px; border:5px solid green; float:right;">
+  <p>Josep es un apasionado de la informática y el desarrollo web que comparte trucos prácticos sobre sistemas y diseño de páginas desde cero. Empezó montando sus propios proyectos locales y hoy ayuda a otros estudiantes a entender las bases del código limpio.</p>
+  <p>En su perfil publica guías sencillas sobre cómo estructurar documentos HTML, organizar carpetas sin errores de rutas y aplicar estilos CSS paso a paso. Sus publicaciones favoritas son las de resolución de problemas reales en el navegador.</p>
+  <p>Cuando no está programando o configurando equipos, pasa el rato con su mascota y disfruta probando nuevas herramientas digitales. Su objetivo es demostrar que cualquiera puede crear su propia web con un poco de práctica.</p>
+  <img src="imagenes/gato_limpiandose.png" alt="Mi gato limpiándose tranquilamente en el suelo" style="width:160px; border:3px dotted blue; float:left;">
+  <p>Este es el verdadero protagonista de la cuenta descansando y limpiándose después de comer. Al aplicar flotación hacia el margen izquierdo con un borde azul punteado, el navegador acomoda automáticamente todo este bloque de texto a su lado derecho. De esta forma se aprovecha mucho mejor el ancho de la pantalla sin dejar huecos en blanco.</p>
+  <p><img src="imagenes/gato_perfil.jpeg" alt="Mi gato posando de perfil encima de la mesa" style="width:120px; float:none;"> Esta última foto no flota hacia ningún lado: se mantiene integrada dentro de la propia línea del párrafo, comportándose exactamente igual que un carácter más del texto.</p>
+</body>
+</html>
+```
+
+### Respuesta a la pregunta
+
+- `float: left`: coloca la imagen pegada al borde izquierdo y hace que el texto fluya por su lado derecho.
+- `float: right`: desplaza la imagen hacia el borde derecho y permite que el texto la rodee por su lado izquierdo.
+- `float: none` (es el comportamiento por defecto): la imagen no flota hacia los lados, se queda en su posición normal dentro de la línea y el texto no la envuelve.
+
+### Qué recordar
+
+- Para apreciar bien cómo el texto rodea a una imagen flotante, los párrafos deben tener suficiente longitud o la imagen debe ajustarse con `width` para que no ocupe todo el ancho.
+- Sintaxis del borde en CSS: `border: grosor estilo color;` (por ejemplo, `border: 5px solid green;`).
+## B2. Perfil de una red social
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B2. Perfil de una red social</title>
+</head>
+<body>
+  <h1>Josep Tech</h1>
+  <img src="imagenes/gato_sofa.jpeg" alt="Foto de perfil de mi gato acurrucado en el sofá" style="width:180px; border:5px solid green; float:right;">
+  <p>Josep es un apasionado de la informática y el desarrollo web que comparte trucos prácticos sobre sistemas y diseño de páginas desde cero. Empezó montando sus propios proyectos locales y hoy ayuda a otros estudiantes a entender las bases del código limpio.</p>
+  <p>En su perfil publica guías sencillas sobre cómo estructurar documentos HTML, organizar carpetas sin errores de rutas y aplicar estilos CSS paso a paso. Sus publicaciones favoritas son las de resolución de problemas reales en el navegador.</p>
+  <p>Cuando no está programando o configurando equipos, pasa el rato con su mascota y disfruta probando nuevas herramientas digitales. Su objetivo es demostrar que cualquiera puede crear su propia web con un poco de práctica.</p>
+  <img src="imagenes/gato_limpiandose.png" alt="Mi gato limpiándose tranquilamente en el suelo" style="width:160px; border:3px dotted blue; float:left;">
+  <p>Este es el verdadero protagonista de la cuenta descansando y limpiándose después de comer. Al aplicar flotación hacia el margen izquierdo con un borde azul punteado, el navegador acomoda automáticamente todo este bloque de texto a su lado derecho. De esta forma se aprovecha mucho mejor el ancho de la pantalla sin dejar huecos en blanco.</p>
+  <p><img src="imagenes/gato_perfil.jpeg" alt="Mi gato posando de perfil encima de la mesa" style="width:120px; float:none;"> Esta última foto no flota hacia ningún lado: se mantiene integrada dentro de la propia línea del párrafo, comportándose exactamente igual que un carácter más del texto.</p>
+</body>
+</html>
+```
+
+### Respuesta a la pregunta
+
+- `float: left`: coloca la imagen pegada al borde izquierdo y hace que el texto fluya por su lado derecho.
+- `float: right`: desplaza la imagen hacia el borde derecho y permite que el texto la rodee por su lado izquierdo.
+- `float: none` (es el comportamiento por defecto): la imagen no flota hacia los lados, se queda en su posición normal dentro de la línea y el texto no la envuelve.
+
+### Qué recordar
+
+- Para apreciar bien cómo el texto rodea a una imagen flotante, los párrafos deben tener suficiente longitud o la imagen debe ajustarse con `width` para que no ocupe todo el ancho.
+- Sintaxis del borde en CSS: `border: grosor estilo color;` (por ejemplo, `border: 5px solid green;`).
+
+
+## B3. ¿Qué formato elijo?
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B3. ¿Qué formato elijo?</title>
+</head>
+<body>
+  <h1>Elección del formato de imagen adecuado</h1>
+  <p>Si necesito guardar una foto de vacaciones con muchos colores, elijo <strong>JPEG (.jpg / .jpeg)</strong>, ya que reduce bastante el peso del archivo manteniendo una buena calidad visual en fotografías.</p>
+  <p>Si se trata de un logo con fondo transparente, utilizo <strong>PNG (.png)</strong>, porque soporta canales de transparencia y conserva los bordes definidos sin perder nitidez.</p>
+  <p>Para un icono que deba verse nítido a cualquier tamaño, opto por <strong>SVG (.svg)</strong>, al ser un formato vectorial que se escala sin pixelarse.</p>
+  <p>Cuando quiero insertar una animación corta tipo meme, recurro a <strong>GIF (.gif)</strong>, puesto que permite secuencias animadas y es compatible con todos los navegadores web.</p>
+  <p>Para el icono que aparece en la pestaña del navegador, uso <strong>ICO (.ico)</strong>, que es el formato estándar para los favicon.</p>
+  <h2>Ejemplos con mis archivos</h2>
+  <img src="imagenes/gato_patio.jpeg" alt="Ejemplo de fotografía en formato JPEG" style="width:240px;">
+  <img src="imagenes/gato_limpiandose.png" alt="Ejemplo de imagen en formato PNG" style="width:160px;">
+  <img src="imagenes/gato_mesa.gif" alt="Ejemplo de archivo en formato GIF" style="width:160px;">
+</body>
+</html>
+```
+
+### Qué recordar
+
+| Necesidad | Formato |
+|---|---|
+| Fotografía con gran variedad de colores | JPEG (`.jpg`, `.jpeg`) |
+| Gráficos con fondo transparente | PNG (`.png`) |
+| Iconos escalables sin pérdida de nitidez | SVG (`.svg`) |
+| Imágenes animadas cortas | GIF (`.gif`) o APNG (`.apng`) |
+| Icono de pestaña del navegador (favicon) | ICO (`.ico`) |
+
+
+
+
+
+## B4. Mis enlaces favoritos
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B4. Mis enlaces favoritos</title>
+</head>
+<body>
+  <h1>Mis páginas web favoritas</h1>
+  <p><a href="https://w3.org">Consorcio W3C, entidad encargada de los estándares web</a></p>
+  <p><a href="https://google.com" target="_blank">Buscador de Google (abre en pestaña nueva)</a></p>
+  <p><a href="https://wikipedia.org" target="_blank" style="color:teal;">Wikipedia, la enciclopedia libre (abre en pestaña nueva)</a></p>
+</body>
+</html>
+```
+
+### Respuesta a la pregunta
+
+Sin aplicar estilos personalizados, los navegadores muestran un enlace pendiente de visitar en color azul y subrayado, mientras que un enlace ya visitado aparece en color morado. Si se mantiene pulsado (estado activo), cambia momentáneamente a rojo.
+
+### Qué recordar
+
+| Atributo | Función |
+|---|---|
+| `href` | Define la dirección URL de destino del enlace |
+| sin `target` (o `target="_self"`) | Carga la página en la pestaña actual |
+| `target="_blank"` | Abre el destino en una pestaña o ventana nueva |
+
+
+
+
+
+
+
+
+
+
