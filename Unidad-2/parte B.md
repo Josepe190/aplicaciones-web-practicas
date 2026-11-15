@@ -24,3 +24,15 @@
 | 5. `id` | A. Crea un marcador (bookmark) dentro de la página | 5-A |
 | 6. `float` | E. Propiedad CSS para que la imagen flote junto al texto | 6-E |
 | 7. `_blank` | C. Valor de `target` que abre una pestaña nueva | 7-C |
+
+
+## A3. ¿Absoluto o relativo?
+
+| N.º | Dirección | Tipo | Por qué |
+|---|---|---|---|
+| 1 | `https://www.w3.org/` | **Absoluto** | Lleva protocolo y dominio. |
+| 2 | `paginas/contacto.html` | **Relativo** | Ruta desde la carpeta de la página actual. |
+| 3 | `/css/default.asp` | **Relativo** (a la raíz) | Empieza por `/`: se busca desde la carpeta raíz del sitio web, pero sin dominio. |
+| 4 | `https://www.google.com/` | **Absoluto** | Lleva protocolo y dominio. |
+| 5 | `./apuntes.pdf` | **Relativo** | `./` significa "la carpeta actual". |
+| 6 | `imagenes/logo.png` | **Relativo** | Entra en la subcarpeta `imagenes`. |
