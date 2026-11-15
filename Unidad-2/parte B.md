@@ -134,3 +134,53 @@ El código está en `index.html`, en la carpeta `proyecto/`.
 (b) En caso de que no se encuentre el archivo `gato.jpg`, el navegador mostrará el icono de error de carga acompañado de la descripción "Gato durmiendo" (definida en `alt`), manteniendo su posición a la derecha.
 
 (c) Pulsar sobre el logotipo cargará la página https://www.w3.org/ en una pestaña distinta del navegador, ya que la imagen actúa como enlace y tiene asignado el atributo `target="_blank"`.
+
+
+
+## Nivel 2 · B1. Galería de tu setup
+
+> Todos los ejercicios van en la carpeta `boletin_html2/`, con las imágenes en `boletin_html2/imagenes/`.
+>
+> Muestra tres veces la misma imagen: a tamaño original; a 200 × 150 px con el atributo style; y a 200 × 150 con los atributos width y height. Todas con alt. Después rompe a propósito el nombre de una en el `src` y observa qué se muestra. Pregunta (en un comentario): ¿por qué se recomienda `style` frente a `width` y `height`?
+
+### Código: `b1.html`
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Josep">
+  <title>B1. Galería de tu setup</title>
+</head>
+<body>
+  <h1>Galería de mi mascota</h1>
+  <h2>Tamaño original</h2>
+  <img src="imagenes/gato_patio.jpeg" alt="Mi gato calicó en el patio junto a su cuenco verde">
+  <h2>200 × 150 con el atributo style</h2>
+  <img src="imagenes/gato_patio.jpeg" alt="Mi gato calicó en el patio junto a su cuenco verde" style="width:200px; height:150px;">
+  <h2>200 × 150 con los atributos width y height</h2>
+  <img src="imagenes/gato_patio.jpeg" alt="Mi gato calicó en el patio junto a su cuenco verde" width="200" height="150">
+  <h2>Imagen rota a propósito</h2>
+  <img src="imagenes/gato_patio_error.jpeg" alt="Mi gato calicó en el patio junto a su cuenco verde">
+  <!--
+    Pregunta: ¿por qué se recomienda style frente a width y height?
+    Respuesta: al utilizar style aplicamos el tamaño directamente como código CSS, separando el diseño de la estructura HTML.
+    De esta manera se evita que una hoja de estilos externa modifique las medidas por accidente y se mantiene todo el estilo unificado.
+  -->
+</body>
+</html>
+```
+
+### Qué se ve con la imagen rota
+
+El atributo `src` apunta a `gato_patio_error.jpeg`, un archivo que no existe en la carpeta. Al no encontrarlo, el navegador muestra el icono de imagen rota acompañado del texto descriptivo definido en `alt`. Por ese motivo es tan importante redactar un `alt` claro que explique qué había en la foto.
+
+### Respuesta a la pregunta
+
+Al utilizar `style` aplicamos el tamaño directamente como código CSS, separando el diseño de la estructura HTML. De esta manera se evita que una hoja de estilos externa modifique las medidas por accidente y se mantiene todo el estilo unificado. Los atributos clásicos `width` y `height` siguen siendo válidos, pero tienen menor prioridad frente a las reglas CSS.
+
+### Qué recordar
+
+- La etiqueta `<img>` es vacía y no se cierra; necesita los atributos `src` (ruta del archivo) y `alt` (descripción alternativa).
+- Al usar `style` se debe indicar siempre la unidad de medida (`width:200px;`), mientras que en los atributos HTML solo se escribe el número (`width="200"`).
