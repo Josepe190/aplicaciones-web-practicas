@@ -685,3 +685,39 @@ El código HTML dejaría de ser válido según el estándar (daría error en cua
 </body>
 </html>
 ```
+
+
+
+# STRANGER THINKS
+Escritorio/
+└── Stranger Thinks/
+    ├── stranger thinks.html
+    └── mis paginas/
+        ├── index.html
+        └── interiores/
+            ├── introduccion.html
+            ├── trailer.html
+            ├── estreno.html
+            ├── reparto.html
+            └── argumento.html
+            
+
+stranger thinks.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<title>Stranger Things 4</title>
+<h1 style="color: red; background-color: black;">
+    Stranger Things 4
+</h1>
+<body>
+   <a href="mis paginas/index.html">Indice</a>
+</body>
+</html>
+``
