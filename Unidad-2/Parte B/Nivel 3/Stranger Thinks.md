@@ -1,4 +1,5 @@
 # STRANGER THINKS
+```text
 Escritorio/
 └── Stranger Thinks/
     ├── stranger thinks.html
@@ -10,6 +11,7 @@ Escritorio/
             ├── estreno.html
             ├── reparto.html
             └── argumento.html
+```
 
 
 stranger thinks.html
