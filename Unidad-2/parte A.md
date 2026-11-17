@@ -1,42 +1,7 @@
 
 
 
-# A3. Caza los errores
-Un compañero ha entregado este código para la web de una tienda de gadgets y tiene fallos. Encuéntralos, anótalos y escribe la versión corregida. (Pista: hay al menos 5.)
-```
-<html>
-<head>
-<title>Mi tienda de gadgets
-</head>
-<body>
-<h1>Ofertas de otoño</h2>
-<p>Auriculares con <b>cancelación de ruido</p></b>
-</body>
-</html>
-```
 
-Correcciones:
-
-no es h2
-
-lo de `</p></b>` esta mal cerrado
-
-lo de head no esta bien cerrado
-
-falta /title
-
-
-
-# A4. Estilos rotos
-El community manager de un streamer ha escrito estas líneas para el banner de su canal. Ninguna se ve como debería. Explica qué falla en cada una y corrígela.
-
-<h1 style="color:red font-size:40px;">Directo esta noche</h1>
-<p style="text-align=center;">Estreno de temporada</p>
-<p style="background-color:yellow;">Sorteo de una tarjeta gráfica<p>
-
-1 el ; despues de red
-2 el error del = de aling center es :
-3 la tercera no esta bien cerrada
 
 
 
