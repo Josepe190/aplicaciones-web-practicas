@@ -689,7 +689,7 @@ El código HTML dejaría de ser válido según el estándar (daría error en cua
 
 
 # STRANGER THINKS
-Escritorio/
+``Escritorio/
 └── Stranger Thinks/
     ├── stranger thinks.html
     └── mis paginas/
@@ -700,7 +700,7 @@ Escritorio/
             ├── estreno.html
             ├── reparto.html
             └── argumento.html
-            
+            ``
 
 stranger thinks.html
 
