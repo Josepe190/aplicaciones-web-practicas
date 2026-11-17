@@ -1,5 +1,5 @@
 # STRANGER THINKS
-``Escritorio/
+Escritorio/
 └── Stranger Thinks/
     ├── stranger thinks.html
     └── mis paginas/
@@ -10,7 +10,7 @@
             ├── estreno.html
             ├── reparto.html
             └── argumento.html
-            ``
+
 
 stranger thinks.html
 
